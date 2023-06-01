@@ -1,0 +1,127 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  
+  <head>
+    <link href="styles.css" rel="stylesheet">
+    <title>Correlation per Geographic Location</title>
+  <body>
+  <h2>Correlation per Region</h2>    
+  <br>
+      <div id="map-container">
+      <meta charset="utf-8">
+      <title>Bokeh Plot</title>
+        
+        <div id="map-container">
+
+        <script type="text/javascript" src="https://cdn.bokeh.org/bokeh/release/bokeh-2.4.1.min.js"></script>
+        <script type="text/javascript">
+            Bokeh.set_log_level("info");
+        </script>
+        </div>
+      
+      
+    
+  </head>
+  
+  
+  <body>
+    
+      
+        
+          
+          
+            
+              <div class="bk-root" id="5c8c88e4-955d-4513-895f-df36243fa771" data-root-id="1005"></div>
+            
+          
+        
+      
+      <div id="map-container">
+        <script type="application/json" id="1159">
+          {"9e4d1e58-6b8e-4de7-ae09-04ddaf0ada4d":{"defs":[],"roots":{"references":[{"attributes":{"coordinates":null,"group":null,"tile_source":{"id":"1002"}},"id":"1034","type":"TileRenderer"},{"attributes":{"coordinates":null,"formatter":{"id":"1027"},"group":null,"major_label_policy":{"id":"1045"},"ticker":{"id":"1025"}},"id":"1024","type":"MercatorAxis"},{"attributes":{"end":6000000,"start":-2000000},"id":"1008","type":"Range1d"},{"attributes":{},"id":"1050","type":"Selection"},{"attributes":{},"id":"1049","type":"UnionRenderers"},{"attributes":{"coordinates":null,"data_source":{"id":"1003"},"glyph":{"id":"1037"},"group":null,"hover_glyph":null,"muted_glyph":{"id":"1039"},"nonselection_glyph":{"id":"1038"},"view":{"id":"1041"}},"id":"1040","type":"GlyphRenderer"},{"attributes":{"dimension":"lat"},"id":"1025","type":"MercatorTicker"},{"attributes":{},"id":"1048","type":"AllLabels"},{"attributes":{"axis":{"id":"1024"},"coordinates":null,"dimension":1,"group":null,"ticker":null},"id":"1031","type":"Grid"},{"attributes":{"fill_color":{"value":"#1f77b4"},"line_color":{"value":"#1f77b4"},"size":{"value":10},"x":{"field":"x"},"y":{"field":"y"}},"id":"1037","type":"Circle"},{"attributes":{"attribution":"&amp;copy; &lt;a href=\"https://www.openstreetmap.org/copyright\"&gt;OpenStreetMap&lt;/a&gt; contributors,&amp;copy; &lt;a href=\"https://cartodb.com/attributions\"&gt;CartoDB&lt;/a&gt;","url":"https://tiles.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png"},"id":"1002","type":"WMTSTileSource"},{"attributes":{"coordinates":null,"group":null,"text":"Visualization per geographical region \n(Hover over the dots to see the graphs)"},"id":"1006","type":"Title"},{"attributes":{"fill_alpha":{"value":0.2},"fill_color":{"value":"#1f77b4"},"hatch_alpha":{"value":0.2},"line_alpha":{"value":0.2},"line_color":{"value":"#1f77b4"},"size":{"value":10},"x":{"field":"x"},"y":{"field":"y"}},"id":"1039","type":"Circle"},{"attributes":{"below":[{"id":"1016"}],"center":[{"id":"1023"},{"id":"1031"}],"height":650,"left":[{"id":"1024"}],"renderers":[{"id":"1034"},{"id":"1040"}],"title":{"id":"1006"},"toolbar":{"id":"1032"},"width":500,"x_range":{"id":"1008"},"x_scale":{"id":"1012"},"y_range":{"id":"1010"},"y_scale":{"id":"1014"}},"id":"1005","subtype":"Figure","type":"Plot"},{"attributes":{"dimension":"lon"},"id":"1019","type":"MercatorTickFormatter"},{"attributes":{},"id":"1012","type":"LinearScale"},{"attributes":{"tools":[{"id":"1004"}]},"id":"1032","type":"Toolbar"},{"attributes":{"dimension":"lon"},"id":"1017","type":"MercatorTicker"},{"attributes":{},"id":"1014","type":"LinearScale"},{"attributes":{"dimension":"lat"},"id":"1027","type":"MercatorTickFormatter"},{"attributes":{"coordinates":null,"formatter":{"id":"1019"},"group":null,"major_label_policy":{"id":"1048"},"ticker":{"id":"1017"}},"id":"1016","type":"MercatorAxis"},{"attributes":{},"id":"1045","type":"AllLabels"},{"attributes":{"end":4000000,"start":-4000000},"id":"1010","type":"Range1d"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"hatch_alpha":{"value":0.1},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"size":{"value":10},"x":{"field":"x"},"y":{"field":"y"}},"id":"1038","type":"Circle"},{"attributes":{"callback":null,"tooltips":"\n        &lt;div&gt;\n            &lt;div&gt;\n                &lt;img\n                    src=\"@imgs\" alt=\"@imgs\";\n                    margin: 5px 5px 5px 5px;\"\n                    border=\"1\"\n                &gt;&lt;/img&gt;\n            &lt;/div&gt;\n        &lt;/div&gt;\n        "},"id":"1004","type":"HoverTool"},{"attributes":{"data":{"imgs":["Graphs GEO/Central.png","Graphs GEO/East.png","Graphs GEO/West.png","Graphs GEO/North.png","Graphs GEO/South.png"],"x":[2000000,4200000,0,2000000,2400000],"y":[0,-400000,1200000,2600000,-2800000]},"selected":{"id":"1050"},"selection_policy":{"id":"1049"}},"id":"1003","type":"ColumnDataSource"},{"attributes":{"axis":{"id":"1016"},"coordinates":null,"group":null,"ticker":null},"id":"1023","type":"Grid"},{"attributes":{"source":{"id":"1003"}},"id":"1041","type":"CDSView"}],"root_ids":["1005"]},"title":"Bokeh Application","version":"2.4.1"}}
+        </script>
+        <script type="text/javascript">
+          (function() {
+            const fn = function() {
+              Bokeh.safely(function() {
+                (function(root) {
+                  function embed_document(root) {
+                    
+                  const docs_json = document.getElementById('1159').textContent;
+                  const render_items = [{"docid":"9e4d1e58-6b8e-4de7-ae09-04ddaf0ada4d","root_ids":["1005"],"roots":{"1005":"5c8c88e4-955d-4513-895f-df36243fa771"}}];
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                
+                  }
+                  if (root.Bokeh !== undefined) {
+                    embed_document(root);
+                  } else {
+                    let attempts = 0;
+                    const timer = setInterval(function(root) {
+                      if (root.Bokeh !== undefined) {
+                        clearInterval(timer);
+                        embed_document(root);
+                      } else {
+                        attempts++;
+                        if (attempts > 100) {
+                          clearInterval(timer);
+                          console.log("Bokeh: ERROR: Unable to run BokehJS code because BokehJS library is missing");
+                        }
+                      }
+                    }, 10, root)
+                  }
+                })(window);
+              });
+            };
+            if (document.readyState != "loading") fn();
+            else document.addEventListener("DOMContentLoaded", fn);
+          })();
+        </script>
+        </div>
+        <br>
+        <br>
+        <table>
+          <thead>
+              <th>Region</th>
+              <th>Graph Appearance</th>
+              <th>Explanation</th>
+          </thead>
+          <tbody>
+              <tr>
+                  <td>North Africa</td>
+                  <td>Overall, the trends of Political Instability and GDP goes opposite ways, except for a peak of instability in the 2010s.</td>
+                  <td>This graph shows greatly how political context plays a role in impacting the economy. While the trends followed a negative correlation, the Arab Spring triggered a peak of violence, which could be the origin of the GDP going down in the 2020s. Or is it Covid?</td>
+              </tr>
+              <tr>
+                  <td>West Africa</td>
+                  <td>Again, the trend of Political Instability and GDP know an overall negative correlation since the 1990s.</td>
+                  <td>Between the 1950s and the 1990s, both lines go up together, it corresponds to the time period of the Cold War.</td>
+              </tr>
+              <tr>
+                  <td>Central Africa</td>
+                  <td>The graph matches the expectations only in the 200s-2010s period.</td>
+                  <td>The wars of independence in those countries could have impacted the numbers, and then again Covid could have hit in the 2020s?</td>
+              </tr>
+              <tr>
+                <td>East Africa</td>
+                <td>The Political Instability line goes up, then dow, with a peak in 1990s. The GDP does steadily up, faster after 1990s and slower again in 2020s.</td>
+                <td>The Rwandan Genocide happens in the 1990s in this area, which spills over to the neighboring countries. Once it is ended, the recovery was very quick. Then got hurt again in the 2020s, it is the only area with Western Africa where the GDP still goes up in the 2020s.</td>
+            </tr>
+            <tr>
+              <td>South Africa</td>
+              <td>The lines of GDP and Instability are very obviously following opposite trends.</td>
+              <td>South Africa begun the Anti-Apartheid movement in the 70s and the negotiations for independence in the area were sometimes getting heated. Overall, this graph matches again the expectations.</td>
+          </tr>
+          </tbody>
+      </table>
+      <br>
+      <br>
+      <a href="references.html">
+        <button>Check out the references</button>
+      </a>
+  </body>
+  
+</html>

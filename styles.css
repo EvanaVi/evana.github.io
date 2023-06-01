@@ -1,0 +1,61 @@
+h1 {
+  color: teal;
+  text-align: center;
+  font-size: 50px;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+h2 {
+  color: black;
+  text-align: center;
+  font-size: 40px;
+}
+
+h3 {
+  color: grey;
+  font-size: 18px;
+}
+
+button {
+  background-color: darkslategrey;
+  color: white;
+  width: 200px;
+  height: 50px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: navy;
+}
+
+#map-container {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.image {
+  flex-basis: 40%
+}
+
+table {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+td {
+  border: 1px solid black;
+  padding: 2px;
+}
+
+th {
+  border: 1px solid black;
+  padding: 2px;
+}
